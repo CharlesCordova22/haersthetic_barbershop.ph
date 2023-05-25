@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/8c89857bb1.js" crossorigin="anonymous"></script>
+        <title>HÆRSTHETIC RESERVATIONS</title>
+    </head>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+            justify-content: right;
+            align-items: right;
+            background-image: url(image/final-mig.jpg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            flex-wrap: wrap;
+        }
+
+        #reservation {
+            width: 100%;
+        }
+        .container {
+            background-color: #f2f2f2;
+            margin-top: 45px;
+            margin-right: 130px;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .container input[type="text"],input[type="number"],input[type="email"],
+        .container textarea {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .container textarea {
+            resize: vertical;
+        }
+
+        .container input[type="submit"] {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container input[type="submit"]:hover {
+            background-color: white;
+            color: black;
+        }
+        .button-container{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        .logo-about{
+        position: absolute;
+        margin-left:-866px;
+        margin-top: -680px;
+        width: 600px;
+        text-decoration: none;
+        color: white;
+        font-size: 60px;
+        }
+    </style>
+    <body>
+        <div id="reservation">
+            <div class="container">
+                <form action="" method="POST">
+                    <label for="">FULL NAME</label>
+                    <input type="text" name="" required>
+
+                    <label for="">PHONE NUMBER</label>
+                    <input type="number" name="" required>
+
+                    <label for="">EMAIL</label>
+                    <input type="email" name="" required>
+
+                    <label for="">No Late Appointment Policy:</label>
+                    <p> Clients are expected to arrive on time for their scheduled appointments. We recommend arriving at least 5 minutes before the scheduled appointment to allow for check-in and preparation.</p>
+
+                    <label for="">COMMENTS</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder=""></textarea>
+
+                    <div class="button-container">
+                        <input type="submit" value="BOOK NOW!">
+                    </div>
+                </form>
+            </div>
+            <a class="logo-about" href="index.html">HÆRSTHETIC</a>
+        </div>
+    </body>
+</html>

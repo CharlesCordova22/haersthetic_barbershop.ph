@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/8c89857bb1.js" crossorigin="anonymous"></script>
+        <title>SERVICES</title>
+    </head>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+            justify-content: right;
+            align-items: right;
+        }
+        body{
+            background-image: url(image/final-mig.jpg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            flex-wrap: wrap;
+        }
+
+        #reservation {
+            width: 100%;
+        }
+        .container {
+            background-color: #f2f2f2;
+            margin-top:140px;
+            margin-right: 120px;
+            padding: 50px;
+            border-radius: 15px;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container select[class="selections"],
+        .container textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .container input[type="datetime-local"]{
+            width: 92%;
+            text-transform: uppercase;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .container input[type="submit"] {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .container input[type="submit"]:hover {
+            background-color: white;
+            color: black;
+        }
+        .button-container{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        .logo-about{
+        position: absolute;
+        margin-left: -871px;
+        margin-top: 35px;
+        width: 600px;
+        text-decoration: none;
+        color: white;
+        font-size: 60px;
+        }
+    </style>
+    <body>
+        <div id="reservation">
+            <a class="logo-about" href="index.html">HÆRSTHETIC</a>
+            <div class="container">
+                <form action="reservation_form.html" method="POST">
+                    <div>
+                        <h1>SERVICES</h1>
+                    </div>
+
+                    <select name="services" class="selections">
+                        <option>CHOOSE YOUR KIND OF SERVICES</option>
+                        <option value="CUT_₱120">CUT ₱120</option>
+                        <option value="CUT&BEARD_₱150">CUT & BEARD ₱150</option>
+                        <option value="CUT&SHAVE_₱170">CUT & SHAVE ₱170</option>
+                    </select>
+
+                    <div>
+                        <h1>DAY & TIME</h1>
+                    </div>
+
+                    <input type="datetime-local" name="">
+
+                    <label>NOTE!!!</label>
+                    <p>HÆRSTHETIC will be open daily from 10:00 AM to 8:00 PM.</p>
+
+                    <div class="button-container">
+                        <input type="submit" value="NEXT">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

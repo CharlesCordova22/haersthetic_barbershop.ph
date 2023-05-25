@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/8c89857bb1.js" crossorigin="anonymous"></script>
+        <title>HÆRSTHETIC</title>
+    </head>
+    <style>
+/* -------------------------MAIN-STYLE---------------------------- */
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif; 
+        box-sizing: border-box;
+        }
+        html{
+        scroll-behavior: smooth;
+        }
+        body{
+            background-color: white;
+            color: white;
+        }
+        #main{
+            width: 100%;
+            height: 100vh;
+        }
+        .container{
+            padding: 0px;
+        }
+        .text-introduce h1{
+            color: black;
+            position: absolute;
+            font-weight:lighter;
+            font-size: 40px;
+            margin-top: 35px;
+            text-transform: uppercase;
+        }
+        .text-introduce{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .get_started{
+            display: flex;
+            justify-content: center;
+        }
+        .get_started input{
+            position: absolute;
+            border-radius: 10px;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: white;
+            border: none;
+            background: black;
+            cursor: pointer;
+            padding: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 150px;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            background-image: url(image/338145855_574321104795294_5499160410040978113_n.jpg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 25px;
+            padding-left: 110px;
+            padding-bottom: 400px;
+        }
+        .logo{
+            margin-left: -30px;
+            margin-top: 10px;
+            width: 600px;
+            text-decoration: none;
+            color: white;
+            font-size: 60px;
+        }
+        .logo {
+        transition: 1s ease;
+        }
+        .logo:hover{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition: 1s ease;
+        }
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            padding-right: 50px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            margin-right: 45px;
+            position: relative;
+        }
+        nav ul li a::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            background: white;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+        nav ul li a:hover::after{
+            width: 100%;
+        }
+        ::-webkit-scrollbar{
+        width: 10px;
+        }
+
+        ::-webkit-scrollbar-track-piece{
+        background-color: #FFF;
+        }
+
+        ::-webkit-scrollbar-thumb{
+        background-color: black;
+        outline: 2px solid #FFF;
+        outline-offset: -2px;
+        border: .1px solid #876445;
+        }
+/* -------------------------ABOUT-STYLE---------------------------- */
+    #about{
+        width: 100%;
+        height: 100vh;
+    }
+    #about{
+        background-image: url(image/339266296_1173098350071555_683199995862336597_n.jpg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-wrap: wrap;
+        padding-top: 25px;
+        padding-left: 110px;
+        padding-bottom: 370px;
+    }
+    .container-about{
+        margin-top: 510px;
+        height: 220px;
+        margin-left: -120px;
+        background: black;
+        opacity: 65%; 
+        
+    }
+    .text-introduce1 h2{
+        padding: 20px;
+        font-size: 30px;
+        font-weight:lighter;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .text-introduce1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-about{
+        position: absolute;
+        padding-left: 1060px;
+        margin-top: -710px;
+        width: 600px;
+        text-decoration: none;
+        color: white;
+        font-size: 60px;
+    }
+ /* -------------------------LOCATED-STYLE---------------------------- */
+    #contact{
+        width: 100%;
+        height: 100vh;
+    }
+    #contact{
+        background-image: url(image/last.jpg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-wrap: wrap;
+    }
+    .logo-located{
+        position: absolute;
+        padding-left: 1160px;
+        margin-top: 45px;
+        width: 600px;
+        text-decoration: none;
+        color: white;
+        font-size: 60px;
+    }
+    .text-introduce2 img{
+        position: absolute;
+        width: 40%;
+        border: 1px solid white;
+        border-radius: 20px;
+        box-shadow: 15px 5px 30px rgba(0,0,0,0.3);
+        margin-top: 200px;
+        margin-left: 750px;
+    }
+    .contact-left{
+        position: absolute;
+        margin-top: 230px;
+        margin-left: 160px;
+    }
+    .sub-title{
+        font-size: 70px;
+    }
+    .contact-left p{
+    font-size: 30px;
+    margin-top: 20px;
+    color: white;
+    }
+    .location{
+        text-transform: uppercase;
+    }
+    .contact-left p i{
+        color: white;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+    .copyright{
+        position:absolute;
+        height: 50px;
+        width: 100%;
+        padding-top: 13px;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        opacity: 80%;
+        background: #262626;
+        font-weight: lighter;
+        margin-top: 705px;
+    }
+    </style>
+<body>
+    <div id="main">
+        <div class="container">
+            <nav>
+                <a class="logo">HÆRSTHETIC</a>
+                <ul id="sidemenu">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="text-introduce">
+                <h1>"Refine Your Look, Reserve Your Spot: Experience Barbering Excellence<br>with Scheduled Reservations!"</h1>
+                <form class="get_started" action="services_and_daytime.html" method="POST">
+                <input type="submit" value="Get Your Reservtaion Now!">
+                </form>
+            </div>
+        </div>
+    </div>
+<!----------------------------ABOUT----------------------------->
+    <div id="about">
+        <div class="container-about">
+            <div class="text-introduce1">
+                <h2>HÆRSTHETIC Barbershop is a premier grooming establishment. Our skilled barbers combine traditional barbering techniques with contemporary styling trends to deliver exceptional grooming services. With a focus on personalization, our experienced team caters to the unique preferences and style of each client. From classic haircuts to beard grooming and styling, we offer a wide range of services designed to enhance your individuality and confidence.</h2>
+            </div>
+        </div>
+        <a class="logo-about" href="#main">HÆRSTHETIC</a> 
+    </div>
+<!----------------------------WHERE----------------------------->
+    <div id="contact">
+            <div class="contact-left">
+                <h1 class="sub-title">CONTACT US</h1>
+                <p><i class="fas fa-paper-plane"></i>jademakz10@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>0928 813 8200</p>
+                <p class="location"><i class="fa-solid fa-location-dot"></i>1037 siloy st. Corner Macopa st. Basak San<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nicolas , Cebu City, Philippines</p>
+            </div>
+            <div class="text-introduce2">
+                <img src="image/final-location-modified.png">
+            </div>
+            <a class="logo-located" href="#main">HÆRSTHETIC</a> 
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Charles Cordova</p> 
+        </div>
+    </div>
+</body>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+</html>
